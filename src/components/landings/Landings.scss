@@ -1,0 +1,63 @@
+@use './../../variables';
+.landings__wrapper {
+	padding-top: 99px;
+	h2 {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 48px;
+	}
+}
+
+.landings__card-wrapper {
+	margin-top: 9px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 16px;
+	.landing__card-photo {
+		position: relative;
+		border-top-left-radius: variables.$border-radius;
+		border-top-right-radius: variables.$border-radius;
+		width: 414px;
+		height: 374px;
+		background: variables.$color-dark;
+		img {
+			position: absolute;
+			top: 40px;
+			left: 40px;
+		}
+	}
+}
+
+.landing__card-title {
+	max-width: 416px;
+	max-height: 77px;
+	padding-top: 24px;
+	padding-left: 32px;
+	padding-bottom: 25px;
+	border: variables.$border;
+	border-bottom-left-radius: variables.$border-radius;
+	border-bottom-right-radius: variables.$border-radius;
+	p {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+}
+
+.landing__card {
+	margin-top: 16px;
+}
+
+@media (max-width: 1290px) {
+	.landings__card-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.landings__wrapper {
+		h2 {
+			text-align: center;
+		}
+	}
+}
